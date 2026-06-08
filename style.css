@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Segoe UI,
+    sans-serif;
+  background: linear-gradient(180deg, #09090b, #111827);
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.card {
+  width: 90%;
+  max-width: 650px;
+
+  padding: 45px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 24px;
+
+  text-align: center;
+
+  color: white;
+
+  z-index: 10;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin-bottom: 20px;
+
+  font-weight: 600;
+}
+
+p {
+  color: #d4d4d8;
+
+  line-height: 1.8;
+
+  min-height: 90px;
+
+  font-size: 1.1rem;
+}
+
+button {
+  margin-top: 20px;
+
+  padding: 14px 30px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+#nextBtn {
+  background: white;
+
+  color: black;
+
+  font-weight: 600;
+}
+
+.choice {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+.accept {
+  background: white;
+
+  color: black;
+}
+
+.maybe {
+  background: #27272a;
+
+  color: white;
+}
+
+#particles {
+  position: fixed;
+
+  inset: 0;
+}
+
+.particle {
+  position: absolute;
+
+  width: 2px;
+
+  height: 2px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  opacity: 0.25;
+
+  animation: float linear infinite;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(-100px);
+  }
+}

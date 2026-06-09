@@ -8,9 +8,9 @@ const messages = [
 
   "Então aqui estamos.",
 
-  "Gosto bastante da sua companhia.",
+  "Gosto bastante das nossas conversas.",
 
-  "E pensei que seria legal passar um tempo com você fora da faculdade também.",
+  "E pensei que seria legal passar um tempo com você fora daqui também.",
 ];
 
 let step = 0;
@@ -29,9 +29,11 @@ function showInvite() {
   text.innerHTML = `
     Então, aqui vai o convite:
     <br><br>
-    O que você acha de sairmos algum dia desses?
+    Como você vai viajar em breve,
+    pensei que seria legal te fazer um convite antes disso.
     <br><br>
-    Talvez um almoço, um filme ou qualquer coisa que pareça divertida.
+    O que você acha de sairmos para almoçar,
+    assistir a um filme ou simplesmente fazer alguma coisa juntos?
     `;
 
   button.style.display = "none";
@@ -41,13 +43,13 @@ function showInvite() {
   choice.className = "choice";
 
   choice.innerHTML = `
-    <button class="accept" onclick="accepted()">
-        Aceito
-    </button>
+        <button class="accept" onclick="accepted()">
+            Gostaria
+        </button>
 
-    <button class="maybe" onclick="maybe()">
-        Quem sabe outro dia
-    </button>
+        <button class="maybe" onclick="maybe()">
+            Quem sabe outro dia
+        </button>
     `;
 
   document.querySelector(".card").appendChild(choice);
@@ -55,24 +57,24 @@ function showInvite() {
 
 function accepted() {
   document.querySelector(".card").innerHTML = `
-    <h1>Ótimo.</h1>
+        <h1>Ótimo.</h1>
 
-    <p>
-        Fico feliz que tenha gostado da ideia.
-        <br><br>
-        Agora é só me mandar uma mensagem
-        e combinamos um dia.
-    </p>
+        <p>
+            Fico feliz que tenha gostado da ideia.
+            <br><br>
+            Agora é só me mandar uma mensagem
+            e combinamos um dia.
+        </p>
     `;
 }
 
 function maybe() {
   document.querySelector(".card").innerHTML = `
-    <h1>Tudo bem.</h1>
+        <h1>Tudo bem.</h1>
 
-    <p>
-        Obrigado por ter chegado até aqui.
-    </p>
+        <p>
+            Obrigado por ter chegado até aqui.
+        </p>
     `;
 }
 

@@ -2,15 +2,15 @@ const text = document.getElementById("text");
 const button = document.getElementById("nextBtn");
 
 const messages = [
-  "Eu poderia simplesmente mandar uma mensagem.",
+  "eu poderia simplesmente mandar uma mensagem e tals.",
 
-  "Mas achei que seria mais interessante fazer isso de um jeito diferente.",
+  "mas achei que seria mais interessante fazer isso de um jeito diferente.",
 
-  "Então aqui estamos.",
+  "então aqui estamos.",
 
-  "Gosto bastante das nossas conversas.",
+  "eu gosto bastante de conversar com você.",
 
-  "E pensei que seria legal passar um tempo com você fora daqui também.",
+  "e pensei que seria legal passar um tempo com você fora da faculdade.",
 ];
 
 let step = 0;
@@ -27,13 +27,12 @@ button.addEventListener("click", () => {
 
 function showInvite() {
   text.innerHTML = `
-    Então, aqui vai o convite:
+    então aqui vai um convite para você:
     <br><br>
-    Como você vai viajar em breve,
-    pensei que seria legal te fazer um convite antes disso.
+    como vc disse que vai viajar depois da prova,
+    achei que seria legal te fazer esse convite antes disso.
     <br><br>
-    O que você acha de sairmos para almoçar,
-    assistir a um filme ou simplesmente fazer alguma coisa juntos?
+    o que você acha de sairmos juntos algum dia desses?
     `;
 
   button.style.display = "none";
@@ -44,11 +43,11 @@ function showInvite() {
 
   choice.innerHTML = `
         <button class="accept" onclick="accepted()">
-            Gostaria
+            gostaria
         </button>
 
         <button class="maybe" onclick="maybe()">
-            Quem sabe outro dia
+            quem sabe outro dia
         </button>
     `;
 
@@ -60,9 +59,9 @@ function accepted() {
         <h1>Ótimo.</h1>
 
         <p>
-            Fico feliz que tenha gostado da ideia.
+            fico feliz que tenha gostado da ideia.
             <br><br>
-            Agora é só me mandar uma mensagem
+            agora é só me mandar uma mensagem
             e combinamos um dia.
         </p>
     `;
